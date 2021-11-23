@@ -1,0 +1,28 @@
+{
+    "name": "Time Keeping",
+    "description": "Time Kepping!",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "128":"icons/128.png",
+        "48":"icons/48.png",
+        "16":"icons/16.png"
+    },
+    "page_action":{
+        "default_icon":"icons/16.png",
+        "default_popup":"html/popup.html",
+        "default_title": "TimeKeeping"
+    },
+    "background":{
+        "scripts":["js/eventPage.js"],
+        "persisten":false
+    },
+    "content_scripts":[{
+        "matches": ["https://developer.chrome.com/*"],
+        "js":["js/content.js","js/jquery-3.0.0.js"],
+        "css":["css/style.css"]
+    }],
+    "permissions":[
+        "tabs"
+    ]
+  }
