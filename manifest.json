@@ -18,7 +18,7 @@
         "persisten":false
     },
     "content_scripts":[{
-        "matches": ["https://developer.chrome.com/*"],
+        "matches": ["http://portal.eiu.edu.vn/*"],
         "js":["js/content.js","js/jquery-3.0.0.js"],
         "css":["css/style.css"]
     }],
